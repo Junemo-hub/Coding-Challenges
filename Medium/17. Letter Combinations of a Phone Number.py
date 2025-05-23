@@ -1,30 +1,33 @@
+from typing import List
+
 class Solution:
-    def letterCombinations(self, digits: str) -> List[str]:
-        if not digits:
-            return []
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        def findFirst():
+            left, right = 0, len(nums) - 1
+            index = -1
+            while left <= right:
+                mid = (left + right) // 2
+                if nums[mid] == target:
+                    index = mid
+                    right = mid - 1  # 계속 왼쪽 찾기
+                elif nums[mid] < target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            return index
 
-        phone = {
-            "2": "abc",
-            "3": "def",
-            "4": "ghi",
-            "5": "jkl",
-            "6": "mno",
-            "7": "pqrs",
-            "8": "tuv",
-            "9": "wxyz"
-        }
+        def findLast():
+            left, right = 0, len(nums) - 1
+            index = -1
+            while left <= right:
+                mid = (left + right) // 2
+                if nums[mid] == target:
+                    index = mid
+                    left = mid + 1  # 계속 오른쪽 찾기
+                elif nums[mid] < target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            return index
 
-        result = []
-
-        def backtrack(path, index):
-            if len(path) == len(digits):
-                result.append(path)
-                return
-
-            current_digit = digits[index]
-            for letter in phone[current_digit]:
-                backtrack(path + letter, index + 1)
-
-        backtrack("", 0)
-        return result
-
+        return [findFirst(), findLast()]
