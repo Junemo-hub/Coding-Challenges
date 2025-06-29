@@ -7,22 +7,26 @@ Each file is named using the format: `{problem_number}. {problem_title}.py`
 
 ## ✅ Easy Problems
 
+```
 - 1. Two Sum — `1.two_sum.py`
 - 70. Climbing Stairs — `70. Climbing Stairs.py`
 - 94. Binary Tree Inorder Traversal — `94. Binary Tree Inorder Traversal.py`
 - 101. Symmetric Tree — `101. Symmetric Tree.py`
 - 104. Maximum Depth of Binary Tree — `104. Maximum Depth of Binary Tree.py`
+```
 
 ---
 
 ## 🔷 Medium Problems
 
+```
 - 2. Add Two Numbers — `2.Add Two Numbers.py`
 - 17. Letter Combinations of a Phone Number — `17. Letter Combinations of a Phone Number.py`
 - 33. Search in Rotated Sorted Array — `33. Search in Rotated Sorted Array.py`
 - 35. Search Insert Position — `35. Search Insert Position.py`
 - 46. Permutations — `46. Permutations.py`
 - 78. Subsets — `78. Subsets.py`
+```
 
 ---
 
