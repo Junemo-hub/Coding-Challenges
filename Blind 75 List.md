@@ -61,7 +61,7 @@ INTERVAL
 LINKED LIST
 -----------
 - Reverse a Linked List — Easy
-- Detect Cycle in a Linked List — Easy
+- Detect Cycle in a Linked List — Easy : 141. Linked List Cycle
 - Merge Two Sorted Lists — Easy
 - Merge K Sorted Lists — Hard
 - Remove Nth Node From End Of List — Medium
