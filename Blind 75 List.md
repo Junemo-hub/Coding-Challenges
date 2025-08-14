@@ -19,7 +19,7 @@ ARRAY (배열)
 
 BINARY
 -------
-- Sum of Two Integers — Easy
+- Sum of Two Integers — Medium
 - Number of 1 Bits — Easy
 - Counting Bits — Easy
 - Missing Number — Easy
