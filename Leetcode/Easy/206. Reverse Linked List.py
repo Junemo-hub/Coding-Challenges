@@ -15,3 +15,6 @@ class Solution:
             current = next_node        # current 앞으로 이동
 
         return prev  # prev가 새 head
+
+
+# 10/19 재풀이
